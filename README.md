@@ -8,14 +8,15 @@ final_dataset is the final dataset after scrapping and joining.
 
 
 # Deployment Using Flask To Heroku
- app1.py is the main flask app file
- model.pkl is the traiined model
- tf1.pkl cantains the saved vocubalary for the trained model
 
-#Technologies Used-
+ - app1.py is the main flask app file
+ - model.pkl is the saved trained model
+ - tf1.pkl cantains the saved vocubalary for the trained model
 
- Flask
- Pyhton
- NLP
- Heroku
- scikit-learn
+# Technologies Used
+
+- Flask
+- Pyhton
+- NLP
+- Heroku
+- scikit-learn
