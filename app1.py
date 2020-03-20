@@ -12,17 +12,17 @@ def ValuePredictor(news):
 
 app=Flask(__name__) 
 
-@app.route('/')
+@app.route('/',methods=['GET'])
 def index():
-	return render_template('form.html')
-@app.route('/result', methods = ['POST']) 
+	return render_template('a.html')
+@app.route('/result', methods = ['GET','POST']) 
 def result(): 
 	if request.method == 'POST': 
 		to_predict_list = request.form.to_dict() 
 		news = list(to_predict_list.values()) 
 		result = ValuePredictor(news)         
 		if result ==0:
-			pred='Bussineess'
+			pred='Business'
 		if result==1:
 			pred='Sport'
 		if result==2:
